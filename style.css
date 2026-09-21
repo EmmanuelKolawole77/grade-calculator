@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #f7f7f7;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav a{
+   text-decoration: none; 
+   color: black;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    font-weight: 500;
+    gap: 600px;
+    padding: 20px 50px;
+    background-color: #FEFDFB;
+}
+
+.nav-item1 a{
+    text-decoration: none;
+    color: black;
+    padding: 0 30px;
+}
+
+.hero-section h2{
+    font-weight: 800;
+    font-size: 52px;
+    text-align: center;
+}
+
+.hero-section{
+    background-color: green;
+    padding: 30px 30px;
+    width: 100%;
+    height: 60vh;
+
+}
+
+.hero-section p{
+    font-weight: 600;
+    font-size: 22px;
+    padding: 26px 130px;
+}
+
+.gradecat{
+    box-shadow: 0 0px 7.8px rgba(0, 0, 0, 0.32);
+    border-radius: 20px;
+    width: 400px;
+    height: 200px;
+    background-color: beige;
+    padding: 30px;
+    text-align: center;
+}
+
+.gradecat h6{
+    font-size: 22px;
+    font-weight: 500;
+    padding-bottom: 10px;
+}
+
+.gradecat a{
+    text-decoration: none;
+    color: rgb(46, 45, 45);
+
+}
+
+.hero-section{
+    color: white;
+    font-weight: 700;
+    text-align: center;
+    padding: 50px 100px;
+}
+
+.grade-section{
+    display: flex;
+    gap: 20px;
+    padding: 10px 50px;
+    padding: 40px;
+}
+
+.big-container{
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 22px;
+    /* border: 0.001px solid black; */
+    box-shadow: 0 0px 7.2px rgba(0, 0, 0, 0.12);
+    margin-top: 60px;
+}
+
+.big-container h1{
+    padding: 20px;
+    text-decoration: underline;
+    font-weight: 600;
+    margin-left: 15px;
+}
+
+.big-container input{
+    padding: 20px 50px;
+    border: 2px solid green;
+    margin-left: 40px;
+}
+
+.big-container button{
+    border-radius: 10px;
+    color: white;
+    background-color: red;
+    padding: 10px 29px;
+    border: none;
+    display: block;
+    margin-top: 20px;
+    margin-left: 130px;
+
+}
+
+.big-container p{
+    padding: 30px;
+    text-align: center;
+}
+                                         
+footer{
+    display: flex;
+    gap: 10px;
+}
