@@ -17,13 +17,21 @@ nav a{
    color: black;
 }
 
+.poly-nav{
+    width: 100%;
+
+}
+
 nav{
     display: flex;
     flex-direction: row;
-    font-weight: 500;
-    gap: 600px;
-    padding: 20px 50px;
+    font-weight: 400;
+    gap: 559px;
+    padding: 10px 50px;
     background-color: #FEFDFB;
+    position: sticky;
+    top: 0;
+    justify-content: center;
 }
 
 .nav-item1 a{
@@ -123,6 +131,8 @@ nav{
 
 }
 
+
+
 .big-container p{
     padding: 30px;
     text-align: center;
@@ -131,4 +141,9 @@ nav{
 footer{
     display: flex;
     gap: 10px;
+    background-color: rgb(166, 206, 166);
+    width: 100%;
+    justify-content: center;
+    height: 30px;
+    padding-top: 7px;
 }
