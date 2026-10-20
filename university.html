@@ -3,36 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>University CGPA Checker</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav class="poly-nav">
-        <a href="index.html">Nigeria Grading System</a>
-    </nav>
-    
-    <div>
-        <h2>Welcome to, University Grading System</h2>
-        <p>Check your degree classification based on the 5.0 CGPA scale used in Nigerian Universities.</p>
-        <div>University CGPA Checker</div>
-        <link rel="stylesheet" href="style.css">
-    </div>
+    <header>
+        <nav>
+            <a href="index.html" class="nav-brand">
+                <svg xmlns="http://www.w3.org/2000/svg" width="1.8em" height="1.8em" viewBox="0 0 512 512">
+                    <path d="M0 0h512v512H0z" fill="none" />
+                    <path fill="currentColor" d="m368 350.643l-112 63l-112-63v-66.562l-32-17.778v103.054l144 81l144-81V266.303l-32 17.778z" />
+                    <path fill="currentColor" d="M256 45.977L32 162.125v27.734L256 314.3l192-106.663V296h32V162.125Zm160 142.831l-32 17.777L256 277.7l-128-71.115l-32-17.777l-22.179-12.322L256 82.023l182.179 94.463Z" />
+                </svg>
+                <span>Nigeria Grading System</span>
+            </a>
 
-    <label for="form">Enter your CGPA (e.g., 4.52)</label>
-    <input 
-    id="gradie"
-    type="number"
-    placeholder="0.00 - 5.00                 /5.0">
-    <button onclick="showGrade()">Show class</button>
-    <p id="seeClass">Your grade will show here</p>
+            <div class="nav-links">
+                <a href="secondary.html">Secondary Schools</a>
+                <a href="polytechnic.html">Polytechnic</a>
+                <a href="university.html" class="active">University</a>
+            </div>
+        </nav>
+    </header>
 
-
-    <footer>
-        <div>
-             <p>Nigeria Grading System</p>
+    <main>
+        <div class="page-banner">
+            <h1>University CGPA Checker</h1>
+            <p>Check your degree classification based on the 5.0 CGPA scale used in Nigerian Universities.</p>
         </div>
 
-        <div>
-            <p>© 2026 Oluwagbenga. All rights reserved.</p>
+        <div class="calculator-container">
+            <div class="calculator-card">
+                <h2>Degree Classification</h2>
+                <p class="subtitle">Enter your CGPA (0.00 - 5.00 scale)</p>
+
+                <div class="form-group">
+                    <label for="gradie">Cumulative GPA (CGPA)</label>
+                    <input
+                        id="gradie"
+                        type="number"
+                        step="0.01"
+                        min="0"
+                        max="5"
+                        placeholder="e.g., 4.52">
+                </div>
+
+                <button onclick="showGrade()">Show Class</button>
+
+                <div id="seeClass">Your degree class will appear here</div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <span class="footer-brand">Nigeria Grading System</span>
+            <span>&copy; 2026 Oluwagbenga. All rights reserved.</span>
         </div>
     </footer>
 
